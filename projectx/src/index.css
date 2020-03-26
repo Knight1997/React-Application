@@ -16,20 +16,32 @@ body {
   margin: 20px;
   border-radius: 5px;
 }
+.ItemClass:hover {
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.ItemPictureClass {
+  border-radius: 50%;
+  border: 1rem solid teal;
+}
 #ItemPrice {
   color: blue;
 }
-#ItemButton {
+#ItemButton,
+#DeleteButton {
   font-size: medium;
   background-color: sandybrown;
-  width: 100px;
-  border-radius: 10px;
-  border: solid 1px black;
-  transition: 0.6s;
+  width: 200px;
+  border-radius: 20px;
+  transition: all 0.1s linear;
 }
-#ItemButton:active {
+#ItemButton:hover,
+#DeleteButton:hover {
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+#ItemButton:active,
+#DeleteButton:active {
   box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  transform: translateY(2px);
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
