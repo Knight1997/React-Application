@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./index.css";
 import itemsData from "./ItemsData";
 import Item from "./Components/Item";
+import Navbar from "./Components/Navbar";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default class App extends Component {
   constructor(props) {
@@ -16,18 +18,23 @@ export default class App extends Component {
   };
   render() {
     return (
-      <section className="ItemsClass">
-        {this.state.items.map(item => (
-          <Item
-            key={item.id}
-            imgUrl={item.imgUrl}
-            itemName={item.itemName}
-            itemPrice={item.itemPrice}
-            id={item.id}
-            deleteItem={this.deleteItem}
-          />
-        ))}
-      </section>
+      <React.Fragment>
+        <section>
+          <Navbar />
+        </section>
+        <section className="ItemsClass">
+          {this.state.items.map(item => (
+            <Item
+              key={item.id}
+              imgUrl={item.imgUrl}
+              itemName={item.itemName}
+              itemPrice={item.itemPrice}
+              id={item.id}
+              deleteItem={this.deleteItem}
+            />
+          ))}
+        </section>
+      </React.Fragment>
     );
   }
 }
