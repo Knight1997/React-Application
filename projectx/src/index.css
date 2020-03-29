@@ -45,6 +45,7 @@ body {
   right: 10px;
   z-index: 100;
   color: rgba(8, 70, 240, 0.1);
+  transition: all 0.2s linear;
 }
 #DeleteItem:hover {
   cursor: pointer;
