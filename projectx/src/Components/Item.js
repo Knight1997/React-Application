@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ItemPicture from "./ItemPicture";
 import ItemPrice from "./ItemPrice";
 import ItemButton from "./ItemButton";
+import DeleteItem from "./DeleteItem";
 export default class Item extends Component {
   render() {
     return (
@@ -9,6 +10,7 @@ export default class Item extends Component {
         <ItemPicture url={this.props.imgUrl} altName={this.props.itemName} />
         <ItemPrice price={this.props.itemPrice} />
         <ItemButton itemId={this.props.id} deleteItem={this.props.deleteItem} />
+        <DeleteItem deleteItem={this.props.deleteItem}itemId={this.props.id} />
       </div>
     );
   }
