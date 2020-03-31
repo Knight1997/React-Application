@@ -12,7 +12,7 @@ export default class Item extends Component {
     };
   }
   callback = count => {
-    this.setState({count: count});
+    this.setState({ count: count });
   };
   render() {
     return (
