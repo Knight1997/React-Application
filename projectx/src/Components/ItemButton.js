@@ -8,7 +8,7 @@ export default class ItemButton extends Component {
     };
   }
   handleClicks = () => {
-    this.setState({ count: this.state.count + 1 });
+    this.setState({count: this.props.count});
   };
   render() {
     return (

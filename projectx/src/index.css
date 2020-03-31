@@ -51,12 +51,17 @@ body {
   cursor: pointer;
   color: red;
 }
-#ItemButton:active{
+#ItemButton:active {
   box-shadow: 0 5px #666;
   transform: translateY(1px);
 }
 #DeleteItem:active {
   transform: translateY(1px);
+}
+.plusButton,
+.minusButton {
+  margin: 1rem;
+  cursor: pointer;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
